@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite Test Web eCommerce">
+    <!-- <parameter name="url" value="https://www.saucedemo.com/v1/index.html"></parameter>
+    <parameter name="username" value="standard_user"></parameter>
+    <parameter name="password" value="secret_sauce"></parameter>
+    <parameter name="url" value="https://demo.guru99.com/test/block.html"></parameter>  -->
+    <parameter name="url" value="http://www.dhtmlgoodies.com/scripts/drag-drop-custom/demo-drag-drop-3.html"></parameter>
+
+    <listeners>
+        <listener class-name="com.juaracoding.listeners.Hook"></listener>
+        <listener class-name="com.juaracoding.listeners.HookSS"></listener>
+    </listeners>
+
+    <!-- <test name="Test Web eCommerce">
+        <parameter name="expectedSignIn" value="https://www.saucedemo.com/v1/inventory.html"></parameter>
+        <classes>
+            <class name="com.juaracoding.Hook" />
+            <class name="com.juaracoding.authentications.SignInWithoutUsernameTest" />
+            <class name="com.juaracoding.authentications.SignInWithoutPasswordTest" />
+            <class name="com.juaracoding.authentications.SignInTest" />
+            <class name="com.juaracoding.inventories.InventoryListTest" />
+        </classes>
+    </test> -->
+
+    <!-- <test name="Fitur Radio Button">
+    <classes>
+      <class name="com.juaracoding.Hook" />
+      <class name="com.juaracoding.RadioTest" />
+    </classes>
+  </test>
+
+  <test name="Fitur Checkbox">
+    <classes>
+      <class name="com.juaracoding.Hook" />
+      <class name="com.juaracoding.CheckboxTest" />
+    </classes>
+  </test> -->
+
+    <!-- <test name="Fitur Selected Box">
+      <classes>
+        <class name="com.juaracoding.Hook" />
+        <class name="com.juaracoding.SelectedTest" />
+      </classes>
+    </test> -->
+
+    <test name="Pertemuan 16">
+        <classes>
+            <!-- <class name="com.juaracoding.Hook" />
+            <class name="com.juaracoding.ByLinkText" />
+            <class name="com.juaracoding.ActionTest" /> -->
+            <class name="com.juaracoding.QuizDragDropTest" />
+            <!-- <class name="com.juaracoding.SignInTest" /> -->
+        </classes>
+    </test>
+</suite>
