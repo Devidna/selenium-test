@@ -83,7 +83,7 @@ public class QuizDragDropTest {
         // .tick(getActivePointer().createPointerUp(LEFT.asArg()));
     }
 
-    @Test
+    @Test (priority = 1)
     public void mingguO2Test() throws InterruptedException {
         // box1 (oslo) - box101 (norway)
         // box2 (stockholm) - box102 (Sweden)
@@ -103,6 +103,20 @@ public class QuizDragDropTest {
             draggableSantui(keyElements[row][0], keyElements[row][1]);
             Thread.sleep(2000);
         }
+    }
+
+    @Test (dependsOnMethods = {"mingguO2Test"})
+    public void DragDropTest() throws InterruptedException {
+
+        String[][] keyElements = {
+                {"box1", "box101"}, // (oslo - norway)
+                {"box2", "box102"}, // (stockholm - sweden)
+                {"box3", "box103"}, // (stockholm - sweden)
+                {"box4", "box104"}, // (stockholm - sweden)
+                {"box5", "box105"}, // (stockholm - sweden)
+                {"box6", "box106"}, // (stockholm - sweden)
+                {"box7", "box107"}, // (stockholm - sweden)
+        };
 
         // TODO: balikin lagi ke semula!! yaach...
         for (int i = 0; i < keyElements.length; i++) {
