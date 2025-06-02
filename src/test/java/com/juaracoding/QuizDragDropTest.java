@@ -84,7 +84,7 @@ public class QuizDragDropTest {
     }
 
     @Test (priority = 1)
-    public void mingguO2Test() throws InterruptedException {
+    public void DragToTargetTest() throws InterruptedException {
         // box1 (oslo) - box101 (norway)
         // box2 (stockholm) - box102 (Sweden)
         // actions.dragAndDrop(source, target).perform();
@@ -105,8 +105,8 @@ public class QuizDragDropTest {
         }
     }
 
-    @Test (dependsOnMethods = {"mingguO2Test"})
-    public void DragDropTest() throws InterruptedException {
+    @Test (dependsOnMethods = {"DragToTargetTest"})
+    public void DragToSourceTest() throws InterruptedException {
 
         String[][] keyElements = {
                 {"box1", "box101"}, // (oslo - norway)
